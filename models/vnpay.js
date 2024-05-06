@@ -16,4 +16,4 @@ const paymentVnpaySchema = new Schema({
   },
 });
 
-// module.exports = mongoose.model("PaymentVnpay", paymentVnpaySchema);
+module.exports = mongoose.model("PaymentVnpay", paymentVnpaySchema);

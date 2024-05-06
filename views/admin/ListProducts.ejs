@@ -15,7 +15,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">NHÓM PRODUCT</h3>
+                    <h3 class="card-title">SẢN PHẨM</h3>
                     <div class="text-right">
                         <a type="button" class="btn btn-default" data-toggle="modal"
                         data-target="#modal-default" class="btn btn-info">THÊM SẢN PHẨM</a>
@@ -73,10 +73,10 @@
                                         </td>
                                         <td>
                                             <div class="d-flex">
-                                                <button class="btn btn-info mr-2" data-toggle="modal" data-target="#huydev<%= showProduct[i]._id %>" type="submit"style="color: #fff">
+                                                <button class="btn btn-info mr-2" data-toggle="modal" data-target="#dev<%= showProduct[i]._id %>" type="submit"style="color: #fff">
                                                     Edit
                                                 </button>
-                                                <div class="modal fade" id="huydev<%= showProduct[i]._id %>">
+                                                <div class="modal fade" id="dev<%= showProduct[i]._id %>">
                                                     <div class="modal-dialog" style="max-width: 50%; "role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
@@ -128,7 +128,7 @@
                                                                         <label for="exampleInputEmail1">CATEGORY NAME</label>
                                                                         <select class="custom-select" name="categoryName">
                                                                             <% for(var j=0; j < showCategories.length; j++) { %>
-                                                                                <option <%= showCategories[j].categorySlug === showProduct[i].categoryName ? 'selected' : 'huydev' %> value="<%= showCategories[j].categorySlug %>">
+                                                                                <option <%= showCategories[j].categorySlug === showProduct[i].categoryName ? 'selected' : 'dev' %> value="<%= showCategories[j].categorySlug %>">
                                                                                     <%= showCategories[j].categoryName %>
                                                                                 </option>
                                                                             <%  } %>
@@ -151,13 +151,13 @@
                     </div>
                 </div>
                 <!-- /.card-body -->
-                <!-- <div class="card-footer clearfix">VUI LÒNG THAO TÁC CẨN THẬN</div> -->
+                <div class="card-footer clearfix">VUI LÒNG THAO TÁC CẨN THẬN</div>
             </div>
             <!-- /.card -->
         </div>
         <!-- /.col -->
     </div>
-    <!-- /.row huydeV -->
+    <!-- /.row dev -->
     <div class="modal fade" id="modal-default">
         <div class="modal-dialog" style="max-width: 50%;">
             <div class="modal-content">

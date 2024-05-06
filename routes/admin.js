@@ -5,7 +5,7 @@ const indexController = require("../controllers/admin/index");
 const categoryController = require("../controllers/admin/category");
 const productController = require("../controllers/admin/product");
 const commentController = require("../controllers/admin/comment");
-////////////////////////////////
+
 const multer = require('multer');
 
 const storage = multer.diskStorage({
@@ -18,10 +18,6 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-
-
-
-
 
 // phân quyền
 async function requireAdmin(req, res, next) {
